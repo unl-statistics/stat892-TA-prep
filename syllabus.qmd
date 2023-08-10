@@ -1,0 +1,188 @@
+---
+pdf-engine: lualatex
+from: markdown+emoji
+fontsize: 11pt
+geometry: margin=1in
+
+format:
+  pdf:
+    keep-tex: false
+    template-partials:
+      - partials/title.tex
+      - partials/before-body.tex
+      - partials/graphics.tex
+    dev: cairo_pdf
+
+title: "Stat 892: Writing for Statistics / TA Prep"
+instructor: Susan Vanderplas
+semester: Fall 2023
+
+email: "[susan.vanderplas@unl.edu](mailto:susan.vanderplas@unl.edu?subject=Stat%20898)"
+web: "srvanderplas.github.io"
+officehours: "\\href{https://calendly.com/drvanderplas/officehours}{Schedule here}"
+office: "Hardin 343D"
+classroom: "CHA 148 EAST"
+classhours: "R 11:00 - 11:50"
+execute: 
+  cache: true
+---
+
+```{r setup, include=FALSE}
+# knitr::opts_chunk$set(cache=FALSE, dev='pdf')
+knitr::opts_chunk$set(cache=F,
+                      fig.path = 'figs/',
+                      cache.path='cache/',
+                      warning=F,
+                      message=F)
+
+knitr::opts_chunk$set(
+                  fig.process = function(x) {
+                      x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                      if (file.rename(x, x2)) x2 else x
+                      }
+                  )
+source("schedule.R")
+```
+
+# Course Goals
+
+- Develop strategies to teach statistical concepts to students effectively
+- Use writing to teach concepts, develop understanding, and reinforce previously learned material. This is called "Writing for Learning".
+    - The ability to explain statistics concepts in non-technical language is one of the best indications of actual understanding.
+
+- Develop writing and critical thinking skills for teaching.
+    - Write clear assignments, exam questions, and grading rubrics.
+    
+- Foster a vibrant teaching/learning community within the Statistics department, so that the department is a safe environment for idea exchange.
+
+# Course Content
+
+The course will follow the basic outline of the Stat 218 curriculum. 
+We will try to introduce major topics a couple of weeks before they are scheduled to come up in your class, so you have some advance preparation before you teach them/assist your mentor with teaching them. 
+We will not cover all of the Stat 218 content. 
+Instead, we will focus on the areas with which students most often struggle. 
+For each statistical content area, we will discuss/model/practice how to enhance/assess student learning through the use of low-stakes writing exercises (and even some mid- and high-stakes writing), carefully written questions, grading rubrics, peer evaluation, and others. 
+
+The major topics are:
+
+- Variation: Using descriptive statistics (numbers, graphs, and plots) to visualize, characterize, and interpret data.
+- Sampling Distributions: The key to statistics. *Really* understanding this is a necessary, if not sufficient, condition for understanding all of statistics. This is the make-or-break concept - in Stat 218 and in Stat 883 and 970. 
+
+- Inference (Interval Estimation and Hypothesis Testing): A corollary to sampling distributions and variation. Understanding the behavior of a statistic tells us about the conclusions we can draw to the larger population of interest.
+
+## Teaching Portfolio
+
+During the semester, you will be asked to collect lesson plans and assessment tools in a course portfolio. 
+The purpose of the portfolio is to provide you with a valuable resource to use with your own class in the future. 
+
+We will collect the portfolios at least twice during the semester (at mid-term and at the end of the semester). 
+By mid-term, the portfolio should contain a fairly complete plan for the first three weeks of your course. 
+
+By the end of the semester, you should have a rough draft of the entire semester. 
+Your portfolio should **NOT** be a carbon copy of your mentor's materials. 
+The portfolio should be specific to a course (Stat 218/380). 
+If you are assisting with Stat 380 or Stat 801/882, you may choose the course on which to focus your portfolio.
+
+## Teaching Journal
+
+It is beneficial to keep a teaching journal, reflecting on your experiences this semester (and during future teaching opportunities). 
+This may include writing about the mentoring experience, how a particular class or activity went, or just comments/ideas/notes for your future teaching reference. 
+We may also throughout the semester pose specific questions as a part of class that you may want to include in your journal.
+
+# Class Schedule & Topic Outline
+
+This schedule is tentative and subject to change. 
+Students are expected to read the corresponding material (linked here and/or in Canvas) prior to coming to class.
+
+```{r calendar}
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-width: 8
+#| fig-height: 4.5
+class_cal
+```
+
+```{r schedule}
+#| echo: false
+#| eval: true
+#| fig-pos: 'h'
+class_days %>% 
+kableExtra::kable(caption = "Tentative schedule of class topics and important due dates", format = "simple")
+```
+
+# Course Policies
+
+## Assessment/Grading
+
+Assignments | Weight
+----- | -----
+Participation | 60% 
+Mid-Term Portfolio | 20%
+Final Portfolio | 20%
+
+Lower bounds for grade cutoffs are shown in the following table. I will not "round up" grades at the end of the semester beyond strict mathematical rules of rounding.
+
+Letter grade |	X + |  	X |	X - 
+-------- | ----- | ----- | -----
+A |	97 |	94 | 	90
+B |	87 |	84 |	80
+C |	77 |	74 |	70
+D |	67 |	64 |	61
+F |	<61 | |
+
+Interpretation of this table: 
+
+- A grade of 85 will receive a B. 
+- A grade of 77 will receive a C+. 
+- A grade of 70 will receive a C-. 
+- Anything below a 61 will receive an F. 
+
+### General Evaluation Criteria
+
+In every assignment, discussion, and written component of this class, you are expected to demonstrate that you are intellectually engaging with the material. I will evaluate you based on this engagement, which means that technically correct but low effort answers which do not demonstrate engagement or understanding will receive no credit.
+
+When you answer questions in this class, your goal is to show that you either understand the material or are actively engaging with it. If you did not achieve this goal, then your answer is incomplete, regardless of whether or not it is technically correct. This is not to encourage you to add unnecessary complexity to your answer - simple, elegant answers are always preferable to unwieldly, complex answers that accomplish the same task.
+
+While this is not an English class, grammar and spelling are important, as is your ability to communicate technical information in writing; both of these criteria will be used in addition to assignment-specific rubrics to evaluate your work.
+
+### Late Policy
+
+Late assignments will be accepted only under extenuating circumstances, and only if you have contacted me **prior** to the assignment due date and received permission to hand the assignment in late. I reserve the right not to grade any assignments received after the assignment due date.
+
+## Attendance
+
+You are expected to attend class. Consistent, repeated failure to attend class or actively participate in the online portions of the course will affect the participation portion of your grade.
+
+If you are feeling ill, please **do not come to class**. Contact me and I will send you a Zoom link to participate in class remotely (if you are feeling up to it), or schedule an appointment with me to meet virtually once you are feeling better.
+
+## Expectations
+
+You can expect me to:
+
+- reply to emails within 48 hours during the week (72 hours on weekends)
+- be available in class to assist with assignments
+- be available by appointment for additional help or discussion
+
+I expect you to:
+
+- Read any assigned material before class
+- Engage with the material and your classmates during class
+- Seek help when you do not understand the material
+- Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
+- Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
+- Be respectful and considerate of everyone in the class
+
+## Inclement Weather
+
+If in-person classes are canceled, you will be notified of the instructional continuity plan for this class by Canvas Announcement. In most circumstances where there is power in the Lincoln area, we will continue to hold class via Zoom. 
+
+## Academic Integrity and Class Conduct
+
+You will be engaging with your classmates and me through in-person discussions, zoom meetings, and collaborative activities. It is expected that everyone will engage in these interactions civilly and in good faith. Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail. Individuals who detract from an atmosphere of civility and respect will be removed from the conversation.
+
+Students are expected to adhere to guidelines concerning academic dishonesty outlined in [Article III B.1 of the University's Student Code of Conduct](http://stuafs.unl.edu/dos/code). The Statistics Department [academic integrity and grade appeal policy is available here](https://statistics.unl.edu/grade-appeals-and-academic-integrity-policy).
+
+# Required University Information
+
+See \url{https://executivevc.unl.edu/academic-excellence/teaching-resources/course-policies}.

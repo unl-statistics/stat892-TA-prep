@@ -1,0 +1,46 @@
+---
+title: Week 3
+date: 2023-09-7
+---
+
+
+## Questions about Variability
+
+- Discuss questions and concerns
+
+- Present the question you peer reviewed, what you liked, and what could be improved.
+
+- Write a rubric for each question (10 points), put rubric in [shared doc](https://uofnelincoln-my.sharepoint.com/:w:/r/personal/svanderplas2_unl_edu/Documents/Canvas/TOPICSSTAT%26PROBLTYSTAT892SEC003Fall2023/Stat892-2023-Variability%20Question%20Rubrics.docx?d=wba84f13b5ae04808af49c0c215045634&csf=1&web=1&e=hE8MD5).
+
+
+
+## Histogram Activity
+
+Use Doris and Buzz activity and simulate a dataset. 
+
+Plot the number of correct answers on a dotplot on the whiteboard.
+
+
+
+## Assignment
+
+- Write a lesson plan on variability. Include slides (if it is helpful), what activities you will use to teach variability, and what assessment activities you will use.
+- Revise your question and incorporate it into lesson plans - due next week Wed at 8pm.
+- We will peer review questions in class - peer reviews will be assigned on Canvas. You should skim your assigned lesson plans before class if possible. 
+
+
+
+
+<!-- ## Next week  -->
+<!-- - Lesson plan (turn in on canvas) -->
+<!--   - Highlights of lesson plan -->
+
+<!--   - Writing: How could histogram activity (or similar) enhance lesson plan? -->
+
+<!--   - Send email - important components -->
+<!--   - Bring 2 copies -->
+
+
+<!-- \clearpage -->
+<!-- \vspace*{1in} -->
+<!-- \clearpage -->

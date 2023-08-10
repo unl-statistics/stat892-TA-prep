@@ -1,0 +1,27 @@
+---
+title: Week 6
+date: 2023-09-28
+---
+
+## Writing
+- Discuss differences/similarities between 
+    - parent distribution
+    - sampling distribution
+    - data distribution
+- Where does 'probability distribution' fit in?
+
+## Simulation
+
+- Explore distribution of min, max, median, range
+- 3 distributions - unimodal, skewed, crazy
+- plotted on board
+- which are parent, sampling, and data distributions?
+- which are approximate? theoretical?
+
+- What would have to be modified to explore sample size?
+
+
+## Assignment
+
+Modify simulation to explore sample size.
+Submit 2-3 lecture slides on canvas exploring the effect of sample size on the sampling distribution. 

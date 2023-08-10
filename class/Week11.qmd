@@ -1,0 +1,28 @@
+---
+title: Week 11
+date: 2023-11-02
+---
+
+## Discussion - use of projects in Stat 218 
+
+- What type of project?
+- What did they learn?
+- What did the students learn?
+- What they would incorporate into future classes?
+- What would they change and why?
+
+
+## For Next Week
+
+- Two questions:
+    - What is the variability of the sampling distribution of a statistic measuring?
+    - How does variability of sampling distribution connect to tests and CIs?
+- Post on discussion board
+
+
+- Find an article in the Journal of Statistics and Data Science Education about an **introductory statistics activity or assessment method**. Claim it on the discussion board (no repeats).  
+
+
+\clearpage
+\vspace*{1in}
+\clearpage

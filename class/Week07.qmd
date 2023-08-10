@@ -1,0 +1,25 @@
+---
+title: Week 7
+date: 2023-10-5
+---
+
+## Activity
+
+- Write definition you'd give your students of sampling distribution
+
+- As a class: come up with 1 definition of sampling distribution based on the individual ones
+
+Based on that definition
+- identify benchmarks for student understanding
+    - key parts
+    - what students really need to understand to fully comprehend definition
+    - what kind of questions would you ask them to see if they've achieved those benchmarks
+
+
+## Journaling
+
+- writing activity to explore sampling distribution and which benchmarks it reinforces
+
+## Assignment
+
+Write a question which assesses whether students understand sampling distributions based on the key benchmarks identified in class.

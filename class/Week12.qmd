@@ -1,0 +1,25 @@
+---
+title: Week 12
+date: 2023-11-9
+---
+
+## The Big Picture
+
+### Discussion 
+- What are the benchmarks for student learning about Hypothesis Tests and CIs?
+    - at the end of the semester?
+    - 1 year later?
+
+## Coming up
+
+- Portfolios due Dec 9
+
+- For next week, 
+    - write a brief (1-2 paragraph) summary of your JSDSE activity or assessment method to post on the discussion board
+    
+    - Come prepared to discuss your activities and ask questions about your classmates' activities
+
+
+\clearpage
+\vspace*{1in}
+\clearpage

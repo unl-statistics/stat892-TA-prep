@@ -1,0 +1,20 @@
+---
+format:
+  pdf:
+    fontsize: 28pt
+---
+# Snack Sign Up
+\thispagestyle{empty}
+- August 31:
+- Sept 7: 
+- Sept 14: 
+- Sept 21: 
+- Sept 28: 
+- Oct 5: 
+- Oct 12: 
+- Oct 19: 
+- Oct 26: 
+- Nov 2: 
+- Nov 9: 
+- Nov 16: 
+- Nov 30: 

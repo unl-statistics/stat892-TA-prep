@@ -1,0 +1,24 @@
+---
+title: "Stat 892: TA Prep and Writing in Statistics"
+format: html
+listing:
+  - id: hwlst
+    categories: true
+    contents: 
+      - "class/*.qmd"
+      - "reading/*.qmd"
+      - "project/*.qmd"
+      - "slides/*.qmd"
+    sort: "date desc"
+    type: table
+    fields: [date, image, title]
+---
+
+# Course Materials
+
+Dates shown are due dates (for homework, portfolio) and dates by which initial comments/annotations should be made (reading). 
+
+Most classes will not contain slide presentations, but when there are slides to share, they will be provided here.
+
+::: {#hwlst}
+:::

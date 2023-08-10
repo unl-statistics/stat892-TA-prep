@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - syllabus.qmd
+    - homework/*.qmd
+    - slides/*.qmd
+    - reading/*.qmd
+    - portfolio/*.qmd
+website:
+  title: "Stat 892: TA Prep and Writing in Statistics"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: syllabus.pdf
+        text: Syllabus
+  google-analytics: "G-LY19SLYGBW"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+execute:
+  cache: true
+  freeze: auto  # re-render only when source changes
