@@ -2,20 +2,25 @@
   {
     "listing": "/index.html",
     "items": [
-      "/class/Week14.html",
-      "/class/Week13.html",
-      "/class/Week12.html",
-      "/class/Week11.html",
-      "/class/Week10.html",
-      "/class/Week09.html",
-      "/class/Week08.html",
-      "/class/Week07.html",
-      "/class/Week06.html",
-      "/class/Week05.html",
-      "/class/Week04.html",
-      "/class/Week03.html",
+      "/class/Week01.html",
+      "/reading/Week01-gaise.html",
       "/class/Week02.html",
-      "/class/Week01.html"
+      "/class/Week03.html",
+      "/class/Week04.html",
+      "/class/Week05.html",
+      "/class/Week06.html",
+      "/reading/Week06-sampling-videos.html",
+      "/class/Week07.html",
+      "/class/Week08.html",
+      "/class/Week09.html",
+      "/reading/Week09-nhst.html",
+      "/class/Week10.html",
+      "/class/Week11.html",
+      "/class/Week12.html",
+      "/reading/Week12-jsdse-article-claim.html",
+      "/class/Week13.html",
+      "/reading/Week13-jsdse-article.html",
+      "/class/Week14.html"
     ]
   }
 ]

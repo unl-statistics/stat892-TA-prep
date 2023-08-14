@@ -10,7 +10,7 @@ date: 2023-08-31
     - Think/Pair/Share discussion
     
 
-- Variability Question: Think of a question to assess students' understanding of variabilitiy
+- Variability Question: Think of a question to assess students' understanding of variability
   - Share in pairs
   - Pick one to share with group
   - Give feedback

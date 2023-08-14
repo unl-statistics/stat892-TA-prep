@@ -4,6 +4,7 @@ date: 2023-11-16
 ---
 
 ## Prepare before class
+
 - find an article in the Journal of Statistics and Data Science Education about an introductory statistics activity or assessment method
 
 - write a brief (1-2 paragraph) summary to post on the discussion board

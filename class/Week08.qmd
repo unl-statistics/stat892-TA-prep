@@ -12,6 +12,7 @@ date: 2023-10-12
 
 
 ### Discussion
+
 What are the essential things students need to understand about confidence intervals?
 
 ## Assignment
