@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-filename-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-filename","listing-file-modified"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -177,6 +177,22 @@ gtag('config', 'G-LY19SLYGBW', { 'anonymize_ip': true});
 <p>Most classes will not contain slide presentations, but when there are slides to share, they will be provided here.</p>
 <div id="listing-hwlst" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-hwlst-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-hwlst'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
@@ -187,168 +203,168 @@ gtag('config', 'G-LY19SLYGBW', { 'anonymize_ip': true});
 <thead>
 <tr>
 <th>
-Date
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
 </th>
 <th>
 </th>
 <th>
-Title
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="Class" data-listing-file-modified-sort="1691678835946" data-listing-filename-sort="Week01.qmd">
+<tr data-index="0" data-categories="Class" data-listing-date-sort="1701324000000" data-listing-file-modified-sort="1692023922333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 14" data-listing-filename-sort="Week14.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Nov 30, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week14.html" class="title listing-title">Class Week 14</a>
 </td>
 </tr>
-<tr data-index="1" data-categories="Class" data-listing-file-modified-sort="1691679015876" data-listing-filename-sort="Week02.qmd">
+<tr data-index="1" data-categories="Class" data-listing-date-sort="1700114400000" data-listing-file-modified-sort="1692023919779" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 13" data-listing-filename-sort="Week13.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Nov 16, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week13.html" class="title listing-title">Class Week 13</a>
 </td>
 </tr>
-<tr data-index="2" data-categories="Class" data-listing-file-modified-sort="1691678817203" data-listing-filename-sort="Week03.qmd">
+<tr data-index="2" data-categories="Class" data-listing-date-sort="1699509600000" data-listing-file-modified-sort="1692023917186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 12" data-listing-filename-sort="Week12.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Nov 9, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week12.html" class="title listing-title">Class Week 12</a>
 </td>
 </tr>
-<tr data-index="3" data-categories="Class" data-listing-file-modified-sort="1691678811163" data-listing-filename-sort="Week04.qmd">
+<tr data-index="3" data-categories="Class" data-listing-date-sort="1698901200000" data-listing-file-modified-sort="1692023914629" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 11" data-listing-filename-sort="Week11.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Nov 2, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week11.html" class="title listing-title">Class Week 11</a>
 </td>
 </tr>
-<tr data-index="4" data-categories="Class" data-listing-file-modified-sort="1691678803796" data-listing-filename-sort="Week05.qmd">
+<tr data-index="4" data-categories="Class" data-listing-date-sort="1698296400000" data-listing-file-modified-sort="1692023911919" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 10" data-listing-filename-sort="Week10.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Oct 26, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week10.html" class="title listing-title">Class Week 10</a>
 </td>
 </tr>
-<tr data-index="5" data-categories="Class" data-listing-file-modified-sort="1691678785313" data-listing-filename-sort="Week06.qmd">
+<tr data-index="5" data-categories="Class" data-listing-date-sort="1697691600000" data-listing-file-modified-sort="1692023909509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 9" data-listing-filename-sort="Week09.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Oct 19, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week09.html" class="title listing-title">Class Week 9</a>
 </td>
 </tr>
-<tr data-index="6" data-categories="Class" data-listing-file-modified-sort="1691678788066" data-listing-filename-sort="Week07.qmd">
+<tr data-index="6" data-categories="Class" data-listing-date-sort="1697086800000" data-listing-file-modified-sort="1692023905723" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 8" data-listing-filename-sort="Week08.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Oct 12, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week08.html" class="title listing-title">Class Week 8</a>
 </td>
 </tr>
-<tr data-index="7" data-categories="Class" data-listing-file-modified-sort="1691678791153" data-listing-filename-sort="Week08.qmd">
+<tr data-index="7" data-categories="Class" data-listing-date-sort="1696482000000" data-listing-file-modified-sort="1692023903149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 7" data-listing-filename-sort="Week07.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Oct 5, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week07.html" class="title listing-title">Class Week 7</a>
 </td>
 </tr>
-<tr data-index="8" data-categories="Class" data-listing-file-modified-sort="1691678761146" data-listing-filename-sort="Week09.qmd">
+<tr data-index="8" data-categories="Class" data-listing-date-sort="1695877200000" data-listing-file-modified-sort="1692023900916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 6" data-listing-filename-sort="Week06.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Sep 28, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week06.html" class="title listing-title">Class Week 6</a>
 </td>
 </tr>
-<tr data-index="9" data-categories="Class" data-listing-file-modified-sort="1691678744463" data-listing-filename-sort="Week10.qmd">
+<tr data-index="9" data-categories="Class" data-listing-date-sort="1695272400000" data-listing-file-modified-sort="1692023897123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 5" data-listing-filename-sort="Week05.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Sep 21, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week05.html" class="title listing-title">Class Week 5</a>
 </td>
 </tr>
-<tr data-index="10" data-categories="Class" data-listing-file-modified-sort="1691678732869" data-listing-filename-sort="Week11.qmd">
+<tr data-index="10" data-categories="Class" data-listing-date-sort="1694667600000" data-listing-file-modified-sort="1692023892746" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 4" data-listing-filename-sort="Week04.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Sep 14, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week04.html" class="title listing-title">Class Week 4</a>
 </td>
 </tr>
-<tr data-index="11" data-categories="Class" data-listing-file-modified-sort="1691678722263" data-listing-filename-sort="Week12.qmd">
+<tr data-index="11" data-categories="Class" data-listing-date-sort="1694062800000" data-listing-file-modified-sort="1692023885946" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 3" data-listing-filename-sort="Week03.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Sep 7, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week03.html" class="title listing-title">Class Week 3</a>
 </td>
 </tr>
-<tr data-index="12" data-categories="Class" data-listing-file-modified-sort="1691678711806" data-listing-filename-sort="Week13.qmd">
+<tr data-index="12" data-categories="Class" data-listing-date-sort="1693458000000" data-listing-file-modified-sort="1692023877439" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 2" data-listing-filename-sort="Week02.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Aug 31, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week02.html" class="title listing-title">Class Week 2</a>
 </td>
 </tr>
-<tr data-index="13" data-categories="Class" data-listing-file-modified-sort="1691678696893" data-listing-filename-sort="Week14.qmd">
+<tr data-index="13" data-categories="Class" data-listing-date-sort="1692853200000" data-listing-file-modified-sort="1692023856633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Class Week 1" data-listing-filename-sort="Week01.qmd">
 <td>
-<span class="listing-date">undefined</span>
+<span class="listing-date">Aug 24, 2023</span>
 </td>
 <td>
 <span class="listing-image"><img src="./figs/person-chalkboard-solid.svg" style="height: 40px;"></span>
 </td>
 <td>
-<span class="listing-title">undefined</span>
+<a href="./class/Week01.html" class="title listing-title">Class Week 1</a>
 </td>
 </tr>
 </tbody>

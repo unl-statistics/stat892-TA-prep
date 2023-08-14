@@ -1,5 +1,5 @@
 ---
-title: Week 1
+title: Class Week 1
 date: 2023-08-24
 ---
 

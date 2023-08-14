@@ -9,7 +9,7 @@ listing:
       - "reading/*.qmd"
       - "project/*.qmd"
       - "slides/*.qmd"
-    sort: "date desc"
+    sort: "date"
     type: table
     fields: [date, image, title]
 ---

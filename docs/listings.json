@@ -1,6 +1,21 @@
 [
   {
     "listing": "/index.html",
-    "items": []
+    "items": [
+      "/class/Week14.html",
+      "/class/Week13.html",
+      "/class/Week12.html",
+      "/class/Week11.html",
+      "/class/Week10.html",
+      "/class/Week09.html",
+      "/class/Week08.html",
+      "/class/Week07.html",
+      "/class/Week06.html",
+      "/class/Week05.html",
+      "/class/Week04.html",
+      "/class/Week03.html",
+      "/class/Week02.html",
+      "/class/Week01.html"
+    ]
   }
 ]
