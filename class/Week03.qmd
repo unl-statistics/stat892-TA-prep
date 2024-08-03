@@ -1,6 +1,6 @@
 ---
 title: Class Week 3
-date: 2023-09-7
+date: 2024-09-12
 ---
 
 
@@ -10,13 +10,13 @@ date: 2023-09-7
 
 - Present the question you peer reviewed, what you liked, and what could be improved.
 
-- Write a rubric for each question (10 points), put rubric in [shared doc](https://uofnelincoln-my.sharepoint.com/:w:/r/personal/svanderplas2_unl_edu/Documents/Canvas/TOPICSSTAT%26PROBLTYSTAT892SEC003Fall2023/Stat892-2023-Variability%20Question%20Rubrics.docx?d=wba84f13b5ae04808af49c0c215045634&csf=1&web=1&e=hE8MD5).
+- Write a rubric for each question (10 points), put rubric in [shared doc](https://uofnelincoln-my.sharepoint.com/:w:/g/personal/svanderplas2_unl_edu/EaNzDlrbkLZOhdf2AC_nx2kB8WrYkvHp5xEnkaqlwBpLWQ?e=gICtmI).
 
 
 
 ## Histogram Activity
 
-Use Doris and Buzz activity and simulate a dataset. 
+Use Doris and Buzz activity and simulate a data set. 
 
 Plot the number of correct answers on a dotplot on the whiteboard.
 

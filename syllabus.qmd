@@ -15,7 +15,7 @@ format:
 
 title: "Stat 892: Writing for Statistics / TA Prep"
 instructor: Susan Vanderplas
-semester: Fall 2023
+semester: Fall 2024
 
 email: "[susan.vanderplas@unl.edu](mailto:susan.vanderplas@unl.edu?subject=Stat%20898)"
 web: "srvanderplas.github.io"
@@ -74,20 +74,22 @@ The major topics are:
 
 During the semester, you will be asked to collect lesson plans and assessment tools in a course portfolio. 
 The purpose of the portfolio is to provide you with a valuable resource to use with your own class in the future. 
+Your portfolio will be a Canvas shell supplemented with a reflection about how you will approach teaching Stat 218. 
 
-We will collect the portfolios at least twice during the semester (at mid-term and at the end of the semester). 
-By mid-term, the portfolio should contain a fairly complete plan for the first three weeks of your course. 
+I will collect the portfolios at least twice during the semester (at mid-term and at the end of the semester). 
+By mid-term, the portfolio should contain a fairly complete plan for the first three weeks of your course, including slides, textbook links, quizzes, in-class activities, and homework assignments. 
 
 By the end of the semester, you should have a rough draft of the entire semester. 
 Your portfolio should **NOT** be a carbon copy of your mentor's materials. 
-The portfolio should be specific to a course (Stat 218/380). 
-If you are assisting with Stat 380 or Stat 801/882, you may choose the course on which to focus your portfolio.
+Instead, you should tailor your materials to a style of teaching that you are comfortable with, learning from approaches taken by your peers. 
+Stat 892 is designed to give you time to discuss and try out different methods for teaching, assessment, and active learning.
+
 
 ## Teaching Journal
 
 It is beneficial to keep a teaching journal, reflecting on your experiences this semester (and during future teaching opportunities). 
 This may include writing about the mentoring experience, how a particular class or activity went, or just comments/ideas/notes for your future teaching reference. 
-We may also throughout the semester pose specific questions as a part of class that you may want to include in your journal.
+I will pose specific questions as a part of class that you may want to include in your journal.
 
 # Class Schedule & Topic Outline
 

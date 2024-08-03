@@ -1,6 +1,9 @@
-
-library(tidyverse)
+library(dplyr)
+library(tibble)
+library(ggplot2)
 library(lubridate)
+library(forcats)
+library(magrittr)
 
 # Create a calendar for your syllabus ----
 # Source: http://svmiller.com/blog/2020/08/a-ggplot-calendar-for-your-semester/
@@ -10,13 +13,17 @@ library(lubridate)
 # Format: YYYYMMDD. In this example, 4 January 2022.
 
 # Weekday(s) of class
-class_wdays <- c("Thu")
 
-not_here_dates <- c(
-  ymd(20230904), # Labor Day
-  ymd(20231016:20231017), # Fall Break
-  ymd(20231122:20231124) # Thanksgiving
-)
+sem_boundary <- c(ymd(20240826), ymd(20241220))
+
+semester_dates <- seq(sem_boundary[1], sem_boundary[2], by=1)
+
+exam_week <- seq(ymd(20241216), ymd(20241220), by = 1)
+
+# Days where class is scheduled outside of normal times
+extra_days <- c()
+
+class_wdays <- c("Thu")
 
 # You can adjust this as you see fit. Basically: add assignment types (e.g. papers, quizzes).
 # My intro class was fairly simple: just exams.
@@ -58,7 +65,7 @@ Cal <- Cal %>%
   mutate(category = case_when(
     due ~ "Due Date",
     not_here ~ "UNL holiday",
-    semester & wkdy %in% class_wdays & !not_here & !exam_wk ~ "Class Day",
+    semester & (wkdy %in% class_wdays | date %in% extra_days) & !not_here & !exam_wk ~ "Class Day",
     semester & exam_wk ~ "Finals",
     semester ~ "Semester",
     TRUE ~ "NA"
