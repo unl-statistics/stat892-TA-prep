@@ -1,6 +1,9 @@
 ---
 title: Class Week 3
-date: 2024-09-12
+date: '2024-09-05'
+categories:
+- class
+- Week03
 ---
 
 

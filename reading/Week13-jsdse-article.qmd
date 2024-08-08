@@ -1,6 +1,9 @@
 ---
 title: JSDSE Article Summary/Discussion
-date: 2023-11-16
+date: '2024-11-14'
+categories:
+- reading
+- Week13
 ---
 
 - Find an article in the Journal of Statistics and Data Science Education about an introductory statistics activity or assessment method

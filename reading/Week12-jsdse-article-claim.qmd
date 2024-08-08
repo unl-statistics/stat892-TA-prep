@@ -1,6 +1,9 @@
 ---
 title: Select a JSDSE Article
-date: 2023-11-9
+date: '2024-11-07'
+categories:
+- reading
+- Week12
 ---
 
 Find an article in the Journal of Statistics and Data Science Education about an **introductory statistics activity or assessment method**. 

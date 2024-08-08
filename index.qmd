@@ -1,17 +1,20 @@
 ---
-title: "Stat 892: TA Prep and Writing in Statistics"
+title: 'Stat 892: TA Prep and Writing in Statistics'
 format: html
 listing:
-  - id: hwlst
-    categories: true
-    contents: 
-      - "class/*.qmd"
-      - "reading/*.qmd"
-      - "project/*.qmd"
-      - "slides/*.qmd"
-    sort: "date"
-    type: table
-    fields: [date, image, title]
+- id: hwlst
+  categories: true
+  contents:
+  - class/Week01.qmd
+  - class/Week02.qmd
+  - class/Week03.qmd
+  - reading/Week01-gaise.qmd
+  sort: date
+  type: table
+  fields:
+  - date
+  - image
+  - title
 ---
 
 # Course Materials

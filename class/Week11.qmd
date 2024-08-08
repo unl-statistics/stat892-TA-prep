@@ -1,6 +1,9 @@
 ---
 title: Class Week 11
-date: 2023-11-02
+date: '2024-10-31'
+categories:
+- class
+- Week11
 ---
 
 ## Discussion - use of projects in Stat 218 

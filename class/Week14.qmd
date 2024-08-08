@@ -1,6 +1,10 @@
 ---
 title: Class Week 14
-date: 2023-11-30
+date: '2024-11-28'
+categories:
+- class
+- Week14
+- Week13
 ---
 
 ## Wrapping up - Discussion

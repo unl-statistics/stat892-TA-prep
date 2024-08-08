@@ -1,0 +1,112 @@
+# From https://github.com/stat20/stat20/blob/main/_course-settings.yml
+
+schedule:
+  - unit: "Stat 892"
+    materials:
+      - href: class/Week01.qmd
+        date: 2024-08-22
+        pub-date: 2024-08-01
+        categories: [class, Week01]
+      - href: reading/Week01-gaise.qmd
+        date: 2024-08-19
+        pub-date: 2024-08-01
+        categories: [reading, Week01]
+      - href: class/Week02.qmd
+        date: 2024-08-29
+        pub-date: 2024-08-01
+        categories: [class, Week02]
+      - href: class/Week03.qmd
+        date: 2024-09-05
+        pub-date: 2024-08-01
+        categories: [class, Week03]
+      - href: class/Week04.qmd
+        date: 2024-09-12
+        categories: [class, Week04]
+      - href: class/Week05.qmd
+        date: 2024-09-19
+        categories: [class, Week05]
+      - href: class/Week06.qmd
+        date: 2024-09-26
+        categories: [class, Week06]
+      - href: reading/Week06-sampling-videos.qmd
+        date: 2024-09-26
+        categories: [reading, Week06]
+      - href: class/Week07.qmd
+        date: 2024-10-03
+        categories: [class, Week07]
+      - href: class/Week08.qmd
+        date: 2024-10-10
+        categories: [class, Week08]
+      - href: class/Week09.qmd
+        date: 2024-10-17
+        categories: [class, Week09]
+      - href: reading/Week09-nhst.qmd
+        date: 2024-10-17
+        categories: [reading, Week09]
+      - href: class/Week10.qmd
+        date: 2024-10-24
+        categories: [class, Week10]
+      - href: class/Week11.qmd
+        date: 2024-10-31
+        categories: [class, Week11]
+      - href: class/Week12.qmd
+        date: 2024-11-07
+        categories: [class, Week12]
+      - href: reading/Week12-jsdse-article-claim.qmd
+        date: 2024-11-07
+        categories: [reading, Week12]
+      - href: class/Week13.qmd
+        date: 2024-11-14
+        categories: [class, Week13]
+      - href: reading/Week13-jsdse-article.qmd
+        date: 2024-11-14
+        categories: [reading, Week13]
+      - href: class/Week14.qmd
+        date: 2024-11-28
+        categories: [class, Week14]
+
+
+auto-publish:
+  timezone: "America/Chicago"
+  publish-days-before: 9
+  live-as-of: Sys.time() # Either Sys.time() or a date parseable by lubridate::ymd()
+
+instructors:
+  - name: Susan Vanderplas
+    email: "susan.vanderplas@unl.edu"
+    quartopub-name: drvanderplas
+
+semester: "Fall, 2024"
+calendar:
+  - name: Week01
+    date: 2024-08-29
+  - name: Week02
+    date: 2024-09-05
+  - name: Week03
+    date: 2024-09-12
+  - name: Week04
+    date: 2024-09-19
+  - name: Week05
+    date: 2024-09-26
+  - name: Week06
+    date: 2024-10-03
+  - name: Week07
+    date: 2024-10-10
+  - name: Week08
+    date: 2024-10-17
+  - name: Week09
+    date: 2024-10-24
+  - name: Week10
+    date: 2024-10-31
+  - name: Week11
+    date: 2024-11-07
+  - name: Week12
+    date: 2024-11-14
+  - name: Week13
+    date: 2024-11-21
+  - name: Week14
+    date: 2024-12-05
+  - name: Week15
+    date: 2024-12-12
+  - name: Finals
+    date: 2024-12-18

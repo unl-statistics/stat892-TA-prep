@@ -1,6 +1,9 @@
 ---
 title: Sampling Distribution Explanations
-date: 2023-09-28
+date: '2024-09-26'
+categories:
+- reading
+- Week06
 ---
 
 Watch the following videos and after each video, reflect (in writing) on the strengths and weaknesses of each video in explaining the concept of sampling distributions. What did each video explain well? Poorly?

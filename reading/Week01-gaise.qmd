@@ -1,6 +1,9 @@
 ---
 title: GAISE Report
-date: 2023-08-24
+date: '2024-08-19'
+categories:
+- reading
+- Week01
 ---
 
 Read the [GAISE report](https://www.amstat.org/docs/default-source/amstat-documents/gaisecollege_full.pdf) and come prepared to discuss its recommendations. 

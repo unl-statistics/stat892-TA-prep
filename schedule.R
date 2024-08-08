@@ -4,6 +4,7 @@ library(ggplot2)
 library(lubridate)
 library(forcats)
 library(magrittr)
+library(tidyr)
 
 # Create a calendar for your syllabus ----
 # Source: http://svmiller.com/blog/2020/08/a-ggplot-calendar-for-your-semester/
@@ -14,26 +15,30 @@ library(magrittr)
 
 # Weekday(s) of class
 
+# What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
+# In this case: 6 January to 23 April
 sem_boundary <- c(ymd(20240826), ymd(20241220))
 
 semester_dates <- seq(sem_boundary[1], sem_boundary[2], by=1)
 
 exam_week <- seq(ymd(20241216), ymd(20241220), by = 1)
 
+cal_boundary <- seq(
+  floor_date(min(sem_boundary), "month"),
+  ceiling_date(max(sem_boundary), "month") - days(1), by = 1)
+
+
 # Days where class is scheduled outside of normal times
 extra_days <- c()
 
 class_wdays <- c("Thu")
 
+not_here_dates <- c(ymd(20240902), ymd(20241021), ymd(20241022),
+                    seq(ymd(20241127), ymd(20241129), by = "day"))
+
 # You can adjust this as you see fit. Basically: add assignment types (e.g. papers, quizzes).
 # My intro class was fairly simple: just exams.
-due_dates <- c(ymd(20231013), ymd(20231208))
-
-# What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
-# In this case: 6 January to 23 April
-semester_dates <- seq(ymd(20230821), ymd(20231216), by=1)
-
-exam_week <- seq(ymd(20231211), ymd(20231215), by = 1)
+due_dates <- c(ymd(20241011), ymd(20241213))
 
 # Custom function for treating the first day of the month as the first week
 # of the month up until the first Sunday (unless Sunday was the start of the month)
@@ -43,7 +48,7 @@ wom <- function(date) {
 }
 
 # Create a data frame of dates, assign to Cal
-Cal <- tibble(date = seq(ymd(20230801), ymd(20231231), by=1))  %>%
+Cal <- tibble(date = cal_boundary)  %>%
   mutate(mon = lubridate::month(date, label=T, abbr=F), # get month label
          wkdy = weekdays(date, abbreviate=T), # get weekday label
          wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"), # make sure Sunday comes first
@@ -53,10 +58,7 @@ Cal <- tibble(date = seq(ymd(20230801), ymd(20231231), by=1))  %>%
          exam_wk = date %in% exam_week,
          day = lubridate::mday(date), # get day of month to add later as a label
          # Below: our custom wom() function
-         week = wom(date)) %>%
-  nest(data = -c(mon, week)) %>%
-  mutate(sem_week = 1:n()) %>%
-  unnest(data)
+         week = wom(date))
 
 # Create a category variable, for filling.
 # I can probably make this a case_when(), but this will work.
@@ -69,7 +71,18 @@ Cal <- Cal %>%
     semester & exam_wk ~ "Finals",
     semester ~ "Semester",
     TRUE ~ "NA"
-  ))
+  )) |>
+  mutate(week_of_year = week(date))
+
+Sem_Week <- Cal |>
+  filter(category == "Class Day") |>
+  mutate(sem_week = 1:n()) |>
+  select(week_of_year, sem_week)
+
+Cal <- Cal |>
+  left_join(Sem_Week, by = "week_of_year")
+
+
 # mutate(category = NA,
 #        category = ifelse(semester == 1, "Semester", category),
 #        category = ifelse(semester == 1 & wkdy %in% c("Wed"), "Class Day", category),
@@ -102,35 +115,42 @@ class_cal <- Cal %>%
 # class_cal
 
 exam_days <- filter(Cal, category == "Due Date") %>%
-  mutate(topic = c("**Teaching Portfolio (1st 3 weeks)**", "**Teaching Portfolio (1st 8 weeks)**"),
+  mutate(topic = c("**Teaching Portfolio (1st 3 weeks)**",
+                   "**Teaching Portfolio (1st 8 weeks)**"),
          time = c("12pm", "12pm"))
 
 class_days <- filter(Cal, category == "Class Day") %>%
   mutate(topic = c(
-    "Measures of Center, Variability",
+    "Introductory Statistics Concepts",
     "Variability",
-    "Exam Construction",
-    "Sampling Distributions",
+    "Variability",
+    "Variability",
     "Sampling Distributions",
     "Sampling Distributions",
     "Sampling Distributions",
     "Interval Estimation",
     "Hypothesis Testing",
-    "Two sample interval estimation",
+    "Hypothesis Testing",
     "Two-sample hypothesis testing",
     "The Big Picture",
-    "Thanksgiving",
+    "The Big Picture",
     "Final Exams/Grading",
     "Wrap-up"),
-    technique = c("Assignment construction, peer review, rubrics",
-                  "Low-stakes writing, reflection",
-                  "Mid-stakes writing, question construction",
-                  "Exercise construction",
-                  "Writing to engage students",
+    technique = c("Reflective writing, discussion",
+                  "Assessment construction, peer review",
+                  "In-class activities, Lesson plan construction",
+                  "Peer review, class discussion",
+                  "Collaborative definition construction, compare/contrast",
+                  "Simulation and discussion",
                   "Benchmarks for sampling distributions",
-                  "Journals as low-stakes writing activities",
-                  "Writing exercises to gauge understanding",
-                  "TBD", "TBD", "TBD", "TBD", " ", "TBD", "TBD")) %>%
+                  "Assignment construction, rubrics",
+                  "Reading, discussion, reflective writing",
+                  "Reflective writing",
+                  "Discussion",
+                  "Projects, Discussion",
+                  "Benchmarks for Student Learning",
+                  "Activities and Assessments in Journals",
+                  "Discussion")) %>%
   # bind_rows(project_days) %>%
   bind_rows(exam_days) %>%
   arrange(sem_week) %>%

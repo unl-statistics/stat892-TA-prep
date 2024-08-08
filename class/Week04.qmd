@@ -1,6 +1,9 @@
 ---
 title: Class Week 4
-date: 2023-09-14
+date: '2024-09-12'
+categories:
+- class
+- Week04
 ---
 
 

@@ -1,6 +1,9 @@
 ---
 title: Hypothesis Testing Articles
-date: 2023-10-19
+date: '2024-10-17'
+categories:
+- reading
+- Week09
 ---
 
 Read the following two articles

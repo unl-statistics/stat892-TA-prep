@@ -1,6 +1,10 @@
 ---
 title: Class Week 2
-date: 2024-09-05
+date: '2024-08-29'
+categories:
+- class
+- Week02
+- Week01
 ---
 
 

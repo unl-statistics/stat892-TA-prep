@@ -1,6 +1,9 @@
 ---
 title: Class Week 13
-date: 2023-11-16
+date: '2024-11-14'
+categories:
+- class
+- Week13
 ---
 
 ## Prepare before class
