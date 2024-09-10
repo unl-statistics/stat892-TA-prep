@@ -20,12 +20,9 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
 
-      # https://jasonraimondi.com/posts/install-google-fonts-in-github-workflow/
       - name: Install Google Fonts
         run: |
-          unzip -d Noto_Sans/ _extensions/Noto_Sans.zip
-          mv Noto_Sans /usr/share/fonts/
-          fc-cache -fv
+          sudo apt install sudo apt install fonts-noto fonts-noto-color-emoji fonts-noto-mono
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
