@@ -18,7 +18,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           token: ${{ secrets.PAT_TOKEN }}
 
       # https://jasonraimondi.com/posts/install-google-fonts-in-github-workflow/
@@ -72,5 +71,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
         run: |
           git config --global user.email "svanderplas2@unl.edu"
-          git config --global user.name "Auto Build 251 Site"
+          git config --global user.name "Auto Build 892 Site"
           quarto publish gh-pages docs --no-render --no-browser
