@@ -8,6 +8,8 @@ listing:
   - class/Week01.qmd
   - class/Week02.qmd
   - class/Week03.qmd
+  - class/Week04.qmd
+  - class/Week05.qmd
   - reading/Week01-gaise.qmd
   sort: date
   type: table
