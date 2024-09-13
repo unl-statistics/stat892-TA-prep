@@ -59,6 +59,7 @@ jobs:
             any::readr
             any::xml2
             any::forcats
+            any::kableExtra
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly
       - name: Render Quarto Project
