@@ -41,6 +41,9 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
+          install-quarto: false
+          install-pandoc: false
+          cache: true
           packages:
             any::rmarkdown
             any::downlit
